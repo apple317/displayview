@@ -6,11 +6,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.Log;
 import android.view.View;
 
-import com.hupu.run.untils.DateHelper;
-import com.pyj.common.DeviceInfo;
+import com.apple.asset.DateHelper;
+import com.apple.asset.DeviceInfo;
 
 public class ChartView extends View {
 
