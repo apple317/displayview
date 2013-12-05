@@ -1,7 +1,5 @@
 package com.apple.asset;
 
-
-
 import java.util.UUID;
 
 import android.app.Activity;
@@ -166,7 +164,10 @@ public class DeviceInfo {
 		}
 
 	}
-
+	public static int getSystemCode() {
+		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+		return currentapiVersion;
+	}
 	/**
 	 * 获取屏幕分辨率
 	 * */
