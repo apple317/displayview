@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 import com.apple.asset.ChartEntity;
-import com.apple.displayview.R;
+import com.apple.disview.R;
 import com.apple.disview.ChartView;
 
 public class ChartActivity extends Activity{
@@ -29,7 +29,7 @@ public class ChartActivity extends Activity{
                                 LayoutParams.WRAP_CONTENT,
                                 LayoutParams.WRAP_CONTENT);
                 layParam.gravity = Gravity.CENTER_HORIZONTAL;
-                //³õÊ¼»¯Öù×´ÊµÌåÀà
+            
                 ChartEntity entity=new ChartEntity();
                 entity.scale=6;
                 entity.row_height=60;
