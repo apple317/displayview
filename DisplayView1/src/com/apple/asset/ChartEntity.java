@@ -23,11 +23,11 @@ public class ChartEntity {
         // 每个柱形横向柱状间距
         public int padding_weight = 0;
         //横向起始点x坐标
-        public int startX = 65;
+        public int startX = 30;
         //每个柱形纵向显示宽度
         public int row_height=0;
         //每个柱形纵向
-        public int padding_height=40;
+        public int padding_height=12;
         public ChartEntity() {
                 
                 // TODO Auto-generated constructor stub
