@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/stripe_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </ImageView>
+
+        <TextView
+            style="@style/TextAppearance.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="启动菜单"
+            android:textColor="#ffffff"
+            android:textSize="28dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.apple.disview.GridLayoutBottom
+            android:id="@+id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dip"
+            android:paddingTop="20dip" >
+
+            <Button
+                android:id="@+id/Install"
+                style="@style/Widget.Button.Long"
+                android:text="@string/install"
+                android:textSize="20sp" >
+            </Button>
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="跳过\nBootMenu\n启动"
+                android:textOn="通过\nBootMenu\n启动"
+                android:textSize="15sp" >
+            </ToggleButton>
+
+            <Button
+                android:id="@+id/Reboot2bm"
+                style="@style/Widget.Button.Long"
+                android:text="@string/boot_mode"
+                android:textSize="15sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/Reboot2rv"
+                style="@style/Widget.Button.Long"
+                android:text="@string/reboot2rv"
+                android:textSize="15sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/Reboot"
+                style="@style/Widget.Button.Long"
+                android:text="@string/reboot"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/QReboot"
+                style="@style/Widget.Button.Long"
+                android:text="@string/killall"
+                android:textSize="20sp" >
+            </Button>
+        </com.apple.disview.GridLayoutBottom>
+    </ScrollView>
+
+   
+
+</LinearLayout>
