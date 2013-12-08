@@ -21,13 +21,22 @@ public final class R {
         public static final int Reboot=0x7f060006;
         public static final int Reboot2bm=0x7f060004;
         public static final int Reboot2rv=0x7f060005;
+        public static final int fast_day=0x7f06000a;
+        public static final int fast_hours=0x7f06000b;
+        public static final int fast_mintue=0x7f06000c;
+        public static final int fast_month=0x7f060009;
+        public static final int four_lay=0x7f06000d;
+        public static final int four_mottom=0x7f06000e;
         public static final int lay_chart=0x7f060000;
+        public static final int lay_content=0x7f060008;
         public static final int layout_button=0x7f060001;
         public static final int toggleButton1=0x7f060003;
     }
     public static final class layout {
         public static final int layout_chart=0x7f030000;
         public static final int layout_grid=0x7f030001;
+        public static final int layout_remfast=0x7f030002;
+        public static final int layout_wheel=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

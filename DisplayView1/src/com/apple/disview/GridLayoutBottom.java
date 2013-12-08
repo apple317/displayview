@@ -80,7 +80,7 @@ public class GridLayoutBottom extends ViewGroup {
 		if (mButtons == null) {
 			NUM_CHILDREN = getChildCount();
 			mButtons = new View[NUM_CHILDREN];
-			// 瀵版鍩岀悰灞炬殶
+			// 得到行数
 			ROWS = NUM_CHILDREN / COLUMNS
 					+ (NUM_CHILDREN % COLUMNS > 0 ? 1 : 0);
 		}
@@ -98,8 +98,6 @@ public class GridLayoutBottom extends ViewGroup {
 		mButtonHeight = child.getMeasuredHeight();
 		mWidthInc = mButtonWidth + 10 + 10;
 		mHeightInc = mButtonHeight + 10 + 10;
-//		mWidthInc = mButtonWidth + mPaddingLeft + mPaddingRight;
-//		mHeightInc = mButtonHeight + mPaddingTop + mPaddingBottom;
 		mWidth = COLUMNS * mWidthInc;
 		mHeight = ROWS * mHeightInc;
 
@@ -113,7 +111,6 @@ public class GridLayoutBottom extends ViewGroup {
 		final int height = parent.getHeight();
 		final int width = parent.getWidth();
 		final int paddingLeft = 10;
-	//	final int paddingLeft = mPaddingLeft;
 		int buttonWidth;
 		int buttonHeight;
 		int widthInc;
