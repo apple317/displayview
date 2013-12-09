@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center" >
         </ImageView>
 
         <TextView
@@ -22,75 +22,112 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dip"
             android:gravity="center"
-            android:text="启动菜单"
+            android:text="九宫格显示组件"
             android:textColor="#ffffff"
             android:textSize="28dip" />
     </LinearLayout>
 
-    <ScrollView
+    <!-- 调用自定义View组件 -->
+
+    <com.apple.disview.GridLayoutBottom
+        android:id="@+id/layout_button"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginBottom="20dip"
-        android:layout_marginRight="20dip"
-        android:layout_weight="1"
-        android:orientation="vertical" >
-		<!-- 调用自定义View组件 -->
-        <com.apple.disview.GridLayoutBottom
-            android:id="@+id/layout_button"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:paddingLeft="20dip"
-            android:paddingTop="20dip" >
-			<!-- 添加一个子View视图-->
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dip"
+        android:paddingTop="20dip" >
+
+        <!-- 添加一个子View视图 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
             <Button
                 android:id="@+id/Install"
-                style="@style/Widget.Button.Long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/install"
                 android:textSize="20sp" >
             </Button>
+        </LinearLayout>
 
-            <ToggleButton
-                android:id="@+id/toggleButton1"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/Install"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton"
-                android:textOff="跳过\nBootMenu\n启动"
-                android:textOn="通过\nBootMenu\n启动"
-                android:textSize="15sp" >
-            </ToggleButton>
-
-            <Button
-                android:id="@+id/Reboot2bm"
-                style="@style/Widget.Button.Long"
-                android:text="@string/boot_mode"
-                android:textSize="15sp" >
+                android:gravity="center"
+                android:text="@string/install"
+                android:textSize="20sp" >
             </Button>
+        </LinearLayout>
 
-            <Button
-                android:id="@+id/Reboot2rv"
-                style="@style/Widget.Button.Long"
-                android:text="@string/reboot2rv"
-                android:textSize="15sp" >
-            </Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
 
             <Button
                 android:id="@+id/Reboot"
-                style="@style/Widget.Button.Long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/reboot"
                 android:textSize="20sp" >
             </Button>
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
 
             <Button
-                android:id="@+id/QReboot"
-                style="@style/Widget.Button.Long"
-                android:text="@string/killall"
+                android:id="@+id/Reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reboot"
                 android:textSize="20sp" >
             </Button>
-        </com.apple.disview.GridLayoutBottom>
-    </ScrollView>
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
 
-   
+            <Button
+                android:id="@+id/Reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reboot"
+                android:textSize="20sp" >
+            </Button>
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/Reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reboot"
+                android:textSize="20sp" >
+            </Button>
+        </LinearLayout>
+        
+    </com.apple.disview.GridLayoutBottom>
 
 </LinearLayout>

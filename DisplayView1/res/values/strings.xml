@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DisplayView1</string>
-    <string name="install">安装\nBootMenu</string>
-    <string name="uninstall">卸载\nBootMenu</string>
-    <string name="reboot2rv">进入恢复模式\n</string>
-    <string name="reboot">重启设备\n</string>
-    <string name="killall">快速重启\n</string>
-    <string name="stock">官方模式</string>
-    <string name="bootmenu">启动菜单</string>
-    <string name="recovery">刷机模式</string>
-    <string name="twoinit">二次初始化</string>
-    <string name="twoboot">二次引导</string>
-    <string name="boot_mode">默认启动模式\n(%s)</string>
-    <string name="default_mode_title">"请选择默认启动模式"</string>
+    <string name="install">宫格1</string>
+    <string name="uninstall">宫格2</string>
+    <string name="reboot2rv">宫格3</string>
+    <string name="reboot">宫格4</string>
+    <string name="killall">宫格5</string>
+    <string name="stock">宫格6</string>
     
     <string name="title_chart">柱状图形</string>
     <string name="title_grid">九宫格</string>
