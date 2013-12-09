@@ -51,6 +51,7 @@ public class RemFast extends Activity {
 		setContentView(R.layout.layout_wheel);
 		mcontext = this;
 		mInflater = LayoutInflater.from(mcontext);
+		createHead();
 	}
 
 	private void createHead() {

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_chart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/stripe_repeat"
+        android:gravity="center"
+        android:text="@string/title_chart"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/txt_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/stripe_repeat"
+        android:gravity="center"
+        android:text="@string/title_grid"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/txt_wheel"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/stripe_repeat"
+        android:gravity="center"
+        android:text="@string/title_wheel"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

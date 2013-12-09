@@ -106,7 +106,8 @@ public class ChartView extends View {
 						: entity.map.get(entity.wList.get(i)) * entity.scale);
 				//用游标画一个方块
 				canvas.drawRect((i + 1) * zPadding + (i) * zWith + startX,
-						lineHeight - total, i * zPadding + i * zWith + startX,
+						lineHeight - DeviceInfo.DipToPixels(this.getContext(),
+								total), (i+1)* zPadding + (i+1) * zWith + startX,
 						lineHeight, paint);
 			}
 		}

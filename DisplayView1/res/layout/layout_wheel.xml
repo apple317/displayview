@@ -9,7 +9,7 @@
         android:id="@+id/four_mottom"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="horizontal">
     </LinearLayout>
 
   

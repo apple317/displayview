@@ -35,10 +35,12 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.MeasureSpec;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
@@ -181,7 +183,8 @@ public class WheelView extends View {
 	protected void onFinishInflate() {
 		// TODO Auto-generated method stub
 		super.onFinishInflate();
-		mHeight = getHeight();
+//		Log.i("ZYN", "--->getHeight()"+getHeight());
+//		
 	}
 
 	/**
@@ -897,8 +900,9 @@ public class WheelView extends View {
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		// TODO Auto-generated method stub
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-		final int width = resolveSize(mWidth, widthMeasureSpec);
-		final int height = resolveSize(mHeight, heightMeasureSpec);
-		setMeasuredDimension(width, height);
+		final int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+		final int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+		mHeight =heightSize;
+		setMeasuredDimension(widthSize, heightSize);
 	}
 }

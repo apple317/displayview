@@ -11,31 +11,31 @@
         android:orientation="horizontal"
         android:padding="10dp" >
 
-        <com.apple.tool.assist.WheelView
+        <com.apple.disview.WheelView
             android:id="@+id/fast_month"
             android:layout_width="0dip"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1.0" />
 
-        <com.apple.tool.assist.WheelView
+        <com.apple.disview.WheelView
             android:id="@+id/fast_day"
             android:layout_width="0dip"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1.0" />
 
-        <com.apple.tool.assist.WheelView
+        <com.apple.disview.WheelView
             android:id="@+id/fast_hours"
             android:layout_width="0dip"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1.0" />
 
-        <com.apple.tool.assist.WheelView
+        <com.apple.disview.WheelView
             android:id="@+id/fast_mintue"
             android:layout_width="0dip"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1.0" />
     </LinearLayout>

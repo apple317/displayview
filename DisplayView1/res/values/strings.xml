@@ -13,4 +13,8 @@
     <string name="twoboot">二次引导</string>
     <string name="boot_mode">默认启动模式\n(%s)</string>
     <string name="default_mode_title">"请选择默认启动模式"</string>
+    
+    <string name="title_chart">柱状图形</string>
+    <string name="title_grid">九宫格</string>
+    <string name="title_wheel">滑轮</string>
 </resources>
