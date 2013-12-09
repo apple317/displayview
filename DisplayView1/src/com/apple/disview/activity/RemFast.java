@@ -53,17 +53,76 @@ public class RemFast extends Activity {
 		mInflater = LayoutInflater.from(mcontext);
 		createHead();
 	}
+	/**
+	 * layout_remfast布局文件
+	 * 
+	 * 
+	 * <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+		<!-- 布局添加一个滑轮视图-->
+        <com.apple.disview.WheelView
+            android:id="@+id/fast_month"
+            android:layout_width="0dip"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" />
+
+        <com.apple.disview.WheelView
+            android:id="@+id/fast_day"
+            android:layout_width="0dip"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" />
+
+        <com.apple.disview.WheelView
+            android:id="@+id/fast_hours"
+            android:layout_width="0dip"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" />
+
+        <com.apple.disview.WheelView
+            android:id="@+id/fast_mintue"
+            android:layout_width="0dip"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</LinearLayout>
+	 * 
+	 * 
+	 * 
+	 */
 
 	private void createHead() {
 		LinearLayout laymottom = (LinearLayout) findViewById(R.id.four_mottom);
+		//创建一个滑轮子视图类
 		View mottom = mInflater.inflate(R.layout.layout_remfast, null);
+		//初始化一个滑轮视图对象
 		wheel_month = (WheelView) mottom.findViewById(R.id.fast_month);
+		//设置滑轮标记
 		wheel_month.setTag("month");
+		//设置滑轮数据集
 		wheel_month.setAdapter(new ArrayWheelAdapter<String>(MONTH_STRING));
-		wheel_month.setCurrentItem(2);
+		//设置滑轮当前所在值
+		wheel_month.setCurrentItem(wheel_month.getCurrentVal("02"));
+		//设置滑轮是否可以循环滑动
 		wheel_month.setCyclic(true);
+		//设置滑轮标题
 		wheel_month.setLabel("月");
+		//添加滑轮变化监听事件
 		wheel_month.addChangingListener(wheelChangeListener);
+		//添加滑轮滚动变化监听事件
 		wheel_month.addScrollingListener(wheelScrolledListener, null);
 		wheel_day = (WheelView) mottom.findViewById(R.id.fast_day);
 		wheel_day.setAdapter(new ArrayWheelAdapter<String>(DAY_STRING));
@@ -118,11 +177,5 @@ public class RemFast extends Activity {
 		}
 	};
 
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-
-	}
-
+	
 }

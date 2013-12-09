@@ -53,7 +53,7 @@ import com.apple.listener.onWheelClickListener;
 /**
  * Numeric wheel view.
  * 
- * @author Yuri Kanivets
+ * @author hushaoping
  */
 public class WheelView extends View {
 	/** Scrolling duration */
@@ -628,6 +628,8 @@ public class WheelView extends View {
 			if (valueLayout != null) {
 				canvas.save();
 				int top = valueLayout.getLineTop(1);
+				//通过游标平移高度
+				//其实每次滑动后都会通过View重新绘画走到这里。
 				canvas.translate(this.getWidth() / 3
 						+ (valueLayout.getWidth() / 11) * 2, -top
 						+ scrollingOffset + itemHeight);
